@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_0ecf4fc8b05ba928c537714e1809bbbdea7fac2c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.4.0_e9760b68bb17cd4ae50aaebcab263100f5197b82.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_12363bbca98e91caf16292c850488b76b17a2e3d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Jie/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_0ab1c747dcc25b9d9d5e7acf2174c491fd2d4d6f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.0.1_6fb05aa605360a5a7f124eb605c49f33d0ca4856.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.0.1_8b4738caa75f93b34f0a51369c47f6d5612c62af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Jie/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_da5d04525b86be7210e22f5c1ad0bcfc6f1c7f89.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.0.1_68012c3f5c3a607f997b3707504371d052e64c5e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_721488a5211b9713d3278467fc525446f766fa90.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_31816c727089bc3460c272e4d7ffeaf4d47680a8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Jie/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_2560e53f495bcbd119a40715ad0179bdce97f285.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Jie/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_9e65bd1c5b485d22a14a4831ce26b3dce22806de.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="28964a93b5eafbe660a5b51e5964d2e66aa45395">
+        <dex dex="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.43.4_71a3727c9c31eb9e019b5c0b7a38f77e22f41080.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
+        <dex dex="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.0.1_fa7462459a14894b47d50073f2508164756076ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Jie/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/pre-dexed/debug/okio-1.9.0_39dbe9d7e1b0bb8eb86f431bbdd310f12e863200.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.0.1_af3f7737e981315c0be163df02453716d0365856.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Jie/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.4.1_1304e25179b303558ab6668696393b1d06267e37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Jie/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
+        <dex dex="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/pre-dexed/debug/okhttp-ws-3.4.1_8ff8c4eaab27bfd01b20d27a6f1a9983489cc816.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.43.4/jars/libs/infer-annotations-1.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dcac634e137395f79693ec760f081a86eb2bd84e">
+        <dex dex="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/pre-dexed/debug/infer-annotations-1.5_7a46f6ec4b598de3ff50bcc1f037a0a8324ad54a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Jie/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_cad72bea0a704ff4de69d0161732468b2f505ceb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Jie/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/pre-dexed/debug/okhttp-3.4.1_bea9b53f220b2c788906bfdcaf015caaab4cca13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_10a7991e92e5f0124572582253c196a3db78e373.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="/Users/Jie/Studio/git_root/BTSerialRNApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.0.1_c98c8493b3f1c94ab132a0e35cb0a016df7f409a.jar" />
+    </item>
+
+</items>
