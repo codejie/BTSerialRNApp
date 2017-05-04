@@ -2,3 +2,5 @@
 __tests__
 .vscode
 node_modules
+.gradle
+build
