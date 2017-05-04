@@ -47,6 +47,7 @@ class HomeScreen extends React.Component {
         this.onButtonPress = this.onButtonPress.bind(this);
         this.getDataSource = this.getDataSource.bind(this);
         this.initBluetoothSerial = this.initBluetoothSerial.bind(this);
+        this.onDevicePress = this.onDevicePress.bind(this);
     }
 
     initBluetoothSerial() {
@@ -90,13 +91,20 @@ class HomeScreen extends React.Component {
     getDataSource() {
         // return this.ds.cloneWithRows(this.props.devices);
         console.log('getData - ', this.props.devices);
-        let names = [];
         if (this.props.devices) {
-            for (let device of this.props.devices) {
-                names.push(device.name);
-            }
+            return this.ds.cloneWithRows(this.props.devices);
+        } else {
+            return this.ds.cloneWithRows([]);
         }
-        return this.ds.cloneWithRows(names);
+    }
+
+    onDevicePress(device) {
+        console.log('navigation = ', this.props.navigation);
+        console.log('on = ', device);
+
+        this.props.navigation.navigate('connection', device);
+
+        this.props.press(false);
     }
 
     render() {
@@ -104,7 +112,7 @@ class HomeScreen extends React.Component {
             <View style={styles.main}>
                 <Button title={this.getTitle()} onPress={()=> this.onButtonPress()} />
                 {/*<Text style={styles.font_24}>Hello</Text>*/}
-                <ListView enableEmptySections={true} dataSource={this.getDataSource()} renderRow={(row) => <Text style={styles.font_24}>{row}</Text>} />
+                <ListView enableEmptySections={true} dataSource={this.getDataSource()} renderRow={(row) => <Text style={styles.font_24} onPress={() => this.onDevicePress(row)}>{row.name}</Text>} />
             </View>
         );
     }
@@ -114,7 +122,7 @@ HomeScreen.propTypes = {
   isScanning: React.PropTypes.bool.isRequired,
   press: React.PropTypes.func.isRequired,
   update: React.PropTypes.func.isRequired,
-  devices: React.PropTypes.array.isRequired,
+//   devices: React.PropTypes.array.isRequired,
 };
 
 const mapStateToProps = (state) => ({
