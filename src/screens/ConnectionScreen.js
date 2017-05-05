@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, TextInput, Button, ListView } from 'react-native';
 
 import BluetoothSerial from 'react-native-bluetooth-serial';
 
@@ -33,14 +33,23 @@ class ConnectionScreen extends React.Component {
         console.log('props = ', props);
         
         this.devices = this.props.navigation.state.params;
+        this.ds = new ListView.DataSource({rowHasChanged : (r1, r2) => r1 !== r2});
+
+        this.state = {};
+        this.state.timer = undefined;
+        this.state.input = '';
+        this.state.recv = [];
 
         this.onConnected = this.onConnected.bind(this);
-        this.onReadBuffer = this.checkDeviceData.bind(this);
+        this.checkDeviceData = this.checkDeviceData.bind(this);
+        this.onSubmitPress = this.onSubmitPress.bind(this);
+        this.onReadData = this.onReadData.bind(this);
+        this.getReadData = this.getReadData.bind(this);
     }
 
     componentDidMount() {
         BluetoothSerial.on('connectionSuccess', () => this.onConnected(true));
-        BluetoothSerial.on('connectionLost', () => onConnected(false));
+        BluetoothSerial.on('connectionLost', () => this.onConnected(false));
 
         BluetoothSerial.connect(this.devices.address)
             .then(result => {
@@ -50,10 +59,16 @@ class ConnectionScreen extends React.Component {
             });
     }
 
+    componentWillUnmount() {
+        // if (this.props.status) {
+            BluetoothSerial.disconnect();
+        // }
+    }
+
     onConnected(connected) {
         console.log('onConnected = ', connected);
 
-        this.onReadBuffer(connected);
+        this.checkDeviceData(connected);
 
         this.props.updateStatus(connected);
     }
@@ -61,27 +76,58 @@ class ConnectionScreen extends React.Component {
     checkDeviceData(connected) {
         if (connected) {
             console.log('checkDeviceData');
-            setTimeout(() => {
+            this.state.timer = setInterval(() => {
                 BluetoothSerial.readFromDevice()
                     .then(data => {
                         this.onReadData(data);
-                        this.checkDeviceData(this.props.status);
                     }).catch(err => {
                         console.log('read from device fail - ', err);
                     });
-            }, 100); 
+            }, 1000); 
+        } else {
+            if (this.state.timer) {
+                console.log('clearInterval');
+                clearInterval(this.state.timer);
+            }
         }
     }
 
     onReadData(data) {
         console.log('recv - ', data);
+        if (data && data.length > 0) {
+            let tmp = this.state.recv;
+            tmp.push(data.replace(/(\r\n|\n|\r)/gm,''));
+            this.setState({recv: tmp});
+        }
+    }
+
+    onSubmitPress() {
+        console.log('submit - ', this.state.input);
+        BluetoothSerial.write(this.state.input)
+            .then(result => {
+                console.log('write succ - ', result);
+            }).catch(err => {
+                console.log('write fail - ', err);
+            });
+    }
+
+    getReadData() {
+        return this.ds.cloneWithRows(this.state.recv);
     }
 
     render() {
         return (
-            <View style={styles.main}>
-                <Text>{this.devices.name}</Text>
-                <Text>connection status: {this.props.status.toString()}</Text>
+            <View style={styles.main_left}>
+                <Text style={styles.font_24}>{this.devices.name}</Text>
+                <Text style={styles.font_20}>connection status: {this.props.status.toString()}</Text>
+                <View style={{flexDirection: 'row'}}>
+                    <TextInput style={{flex:1}} onChangeText={(data) => this.setState({input: data})}/>
+                </View>
+                <View style={{flexDirection: 'row', alignSelf: 'flex-end'}}>
+                <Button style={{flex: 1}} onPress={() => this.onSubmitPress() } title='submit' />
+                    </View>
+                <Text style={styles.font_20}>Recv</Text>
+                <ListView style={{flex:1}} enableEmptySections={true} dataSource={this.getReadData()} renderRow={(row) => <Text>{row}</Text>} />
             </View>
         );
     }
