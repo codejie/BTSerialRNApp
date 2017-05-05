@@ -35,6 +35,7 @@ class ConnectionScreen extends React.Component {
         this.devices = this.props.navigation.state.params;
 
         this.onConnected = this.onConnected.bind(this);
+        this.onReadBuffer = this.checkDeviceData.bind(this);
     }
 
     componentDidMount() {
@@ -51,7 +52,29 @@ class ConnectionScreen extends React.Component {
 
     onConnected(connected) {
         console.log('onConnected = ', connected);
+
+        this.onReadBuffer(connected);
+
         this.props.updateStatus(connected);
+    }
+
+    checkDeviceData(connected) {
+        if (connected) {
+            console.log('checkDeviceData');
+            setTimeout(() => {
+                BluetoothSerial.readFromDevice()
+                    .then(data => {
+                        this.onReadData(data);
+                        this.checkDeviceData(this.props.status);
+                    }).catch(err => {
+                        console.log('read from device fail - ', err);
+                    });
+            }, 100); 
+        }
+    }
+
+    onReadData(data) {
+        console.log('recv - ', data);
     }
 
     render() {
