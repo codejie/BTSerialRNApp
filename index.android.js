@@ -5,4 +5,4 @@ import {
 
 import App from './src/App';
 
-AppRegistry.registerComponent('BTSerialApp', () => App);
+AppRegistry.registerComponent('BTSerialRNApp', () => App);

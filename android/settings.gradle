@@ -1,4 +1,4 @@
-rootProject.name = 'BTSerialApp'
+rootProject.name = 'BTSerialRNApp'
 
 include ':app'
 include ':react-native-bluetooth-serial'
