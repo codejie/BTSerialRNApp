@@ -8,9 +8,11 @@ export function fetchUrl(url) {
         .then(res => res.json())
         .then(json => {
             console.log('res json = ', json);
+            return {ret:'0'};
         })
         .catch(err => {
             console.log('err = ', err);
+            return {ret: '1'};
         });
 }
 
@@ -35,6 +37,7 @@ export function* sagaTest() {
 export function* sagaFetch() {
     let ret = yield take(ACTION_FETCH_URL);
     console.log('sagaFetch - ', ret);
-    yield call(fetchUrl, ret.url);
-    yield put(act('finished'));
+    ret = yield call(fetchUrl, ret.url);
+    console.log('ret = ', ret);
+    yield put(act(ret.ret));
 }
