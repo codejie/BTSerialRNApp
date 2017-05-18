@@ -32,8 +32,12 @@ export function homeReducer(state = {
 
 
 class HomeScreen extends React.Component {
-    static navigationOptions = {
-        title: 'Devices'
+    static navigationOptions = ({navigation}) => {
+        console.log('navigationOptions - navigation = ', navigation);
+        return {
+            title: 'Devices',
+            headerRight: <Text onPress={() => {navigation.navigate('saga')}}>Saga</Text>  
+        };      
     }
 
     constructor(props) {
